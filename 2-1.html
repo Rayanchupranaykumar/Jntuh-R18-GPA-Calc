@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head><title>r18--2-1 Gpa calculator</title>
+    
+ <link href="styles.css" rel="stylesheet" />
+<script>
+    function calc21(){
+    const map1 = new Map();
+    map1.set('O', 10);
+    map1.set('A+',9);
+    map1.set('A',8);
+    map1.set('B+',7);
+    map1.set('B',6);
+    map1.set('C',5);
+    map1.set('F',0);
+    map1.set('Ab',0);
+    var ade=map1.get(document.getElementById("ade").value)*3;
+    var ds=map1.get(document.getElementById("ds").value)*4;
+    var cosm=map1.get(document.getElementById("cosm").value)*4;
+    var coa=map1.get(document.getElementById("coa").value)*3;
+    var oops=map1.get(document.getElementById("oops").value)*2;
+    var adelab=map1.get(document.getElementById("adelab").value)*1;
+    var dslab=map1.get(document.getElementById("dslab").value)*1.5;
+    var itwlab=map1.get(document.getElementById("itwlab").value)*1.5;
+    var cpplab=map1.get(document.getElementById("cpplab").value)*1;
+    var gpa=(ade+ds+cosm+coa+oops+adelab+dslab+itwlab+cpplab)/21;
+    document.getElementById("form").innerHTML='<h2 class="text-success"><center>your GPA is : '+gpa.toPrecision(3)+'/10</center></h2>';
+    }
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7754624932884765"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="C:\Downloads\book" alt="">
+<div class="container"><center><br>
+    <h2 style="color: rgb(24, 210, 207);">2-1 GPA calculator </h2>
+<h4><marquee>Enter grades as per below mentioned </marquee></h4></center><br>
+<div id="form">
+<form onsubmit="calc21()" method="post">
+    <h8 style="color: rgb(105, 154, 109);">ADE</h8>
+<select id="ade" class="form-select">
+<option value="O">O</option>
+<option value="A+">A+</option>
+<option value="A">A</option>
+<option value="B+">B+</option>
+<option value="B">B</option>
+<option  value="C">C</option>
+<option value="F">F</option>
+<option value="Ab">Ab</option>
+</select><br>
+<h8 style="color: rgb(172, 184, 120);">DS</h8>
+<select id="ds" class="form-select">
+<option value="O">O</option>
+<option value="A+">A+</option>
+<option value="A">A</option>
+<option value="B+">B+</option>
+<option value="B">B</option>
+<option value="C">C</option>
+<option value="F">F</option>
+<option value="Ab">Ab</option>
+</select><br>
+<h8 style="color: rgb(100, 142, 187);">COSM</h8>
+<select id="cosm" class="form-select">
+<option value="O">O</option>
+<option value="A+">A+</option>
+<option value="A">A</option>
+<option value="B+">B+</option>
+<option value="B">B</option>
+<option value="C">C</option>
+<option value="F">F</option>
+<option value="Ab">Ab</option>
+</select><br>
+<h8 style="color: rgb(137, 97, 105);">COA</h8>
+<select id="coa" class="form-select">
+<option value="O">O</option>
+<option value="A+">A+</option>
+<option value="A">A</option>
+<option value="B+">B+</option>
+<option value="B">B</option>
+<option value="C">C</option>
+<option value="F">F</option>
+<option value="Ab">Ab</option>
+</select><br>
+<h8 style="color: rgb(138, 82, 130);">OOPS through C++</h8>
+<select id="oops" class="form-select">
+<option value="O">O</option>
+<option value="A+">A+</option>
+<option value="A">A</option>
+<option value="B+">B+</option>
+<option value="B">B</option>
+<option value="C">C</option>
+<option value="F">F</option>
+<option value="Ab">Ab</option>
+</select><br>
+<h8 style="color: rgb(138, 82, 82);">ADE LAB</h8>
+<select id="adelab" class="form-select">
+<option value="O">O</option>
+<option value="A+">A+</option>
+<option value="A">A</option>
+<option value="B+">B+</option>
+<option value="B">B</option>
+<option value="C">C</option>
+<option value="F">F</option>
+<option value="Ab">Ab</option>
+</select><br>
+<h8 style="color: rgb(138, 82, 130);">DS LAB</h8>
+<select id="dslab" class="form-select">
+<option value="O">O</option>
+<option value="A+">A+</option>
+<option value="A">A</option>
+<option value="B+">B+</option>
+<option value="B">B</option>
+<option value="C">C</option>
+<option value="F">F</option>
+<option value="Ab">Ab</option>
+</select><br>
+<h8 style="color: rgb(214, 226, 171);">IT Workshop lab</h8>
+<select id="itwlab" class="form-select">
+<option value="O">O</option>
+<option value="A+">A+</option>
+<option value="A">A</option>
+<option value="B+">B+</option>
+<option value="B">B</option>
+<option value="C">C</option>
+<option value="F">F</option>
+<option value="Ab">Ab</option>
+</select><br>
+<h8 style="color: rgb(212, 124, 137);">CPP lab</h8>
+<select id="cpplab" class="form-select">
+<option value="O">O</option>
+<option value="A+">A+</option>
+<option value="A">A</option>
+<option value="B+">B+</option>
+<option value="B">B</option>
+<option value="C">C</option>
+<option value="F">F</option>
+<option value="Ab">Ab</option>
+</select><br>
+<input type="submit" class="btn btn-primary">
+</form></div></div>
+<!-- Footer-->
+<footer class="footer py-4 bg-light">
+    <div class="container">
+        <div class="row align-items-center"><div class="navbar navbar-fixed-bottom">
+            <div class="col-lg-4 text-lg-start">Created by &copy; Pranaykumar Rayanchu</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/pranay_kumarrr/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://github.com/Rayanchupranaykumar"><i class="fab fa-github"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/pranay-kumar-b9a403209"><i class="fab fa-linkedin-in"></i></a></div>
+            <div class="col-lg-4 text-lg-end">
+                <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+            </div>
+        </div></div>
+    </div>
+    <br>
+</footer>      
+<!-- Bootstrap core JS--><script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
