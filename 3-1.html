@@ -3,7 +3,7 @@
 <head><title>r18--3-1 Gpa calculator</title>
  <link href="styles.css" rel="stylesheet" />
 <script>
-    function calc21(){
+    function calc31(){
     const map1 = new Map();
     map1.set('O', 10);
     map1.set('A+',9);
@@ -22,7 +22,7 @@
     var selab=map1.get(document.getElementById("selab").value)*1.5;
     var cnwtlab=map1.get(document.getElementById("cnwtlab").value)*1.5;
     var aecs=map1.get(document.getElementById("aecs").value)*1;
-    var gpa=(se+wt+flat+cn+da+aos+selab+cnwtlab+aecs)/22;
+    var gpa=(flat+se+cn+wt+da+cg+selab+cnwtlab+aecs)/22;
     document.getElementById("form").innerHTML='<h2 class="text-success"><center>your GPA is : '+gpa.toPrecision(3)+'/10</center></h2>';
     }
 </script>
@@ -34,30 +34,30 @@
     <h2 style="color: rgb(24, 210, 207);">3-1 GPA calculator </h2>
     <h4><marquee>Enter grades as per below mentioned </marquee></h4></center><br>
 <div id="form">
-<form onsubmit="calc21()" method="post">
-    <h8 style="color: rgb(229, 51, 119);">FLAT</h8>
-    <select id="flat" class="form-select">
-    <option value="O">O</option>
-    <option value="A+">A+</option>
-    <option value="A">A</option>
-    <option value="B+">B+</option>
-    <option value="B">B</option>
-    <option value="C">C</option>
-    <option value="F">F</option>
-    <option value="Ab">Ab</option>
-    </select><br>
-<h8 style="color: rgb(183, 133, 190);">SE</h8>
+<form onsubmit="calc31()" method="post">
+<h8 style="color: rgb(203, 124, 154);">FLAT</h8>
+<select id="flat" class="form-select">
+<option value="O">O</option>
+<option value="A+">A+</option>
+<option value="A">A</option>
+<option value="B+">B+</option>
+<option value="B">B</option>
+<option value="C">C</option>
+<option value="F">F</option>
+<option value="Ab">Ab</option>
+</select><br>
+<h8 style="color: rgb(151, 193, 110);">SE</h8>
 <select id="se" class="form-select">
 <option value="O">O</option>
 <option value="A+">A+</option>
 <option value="A">A</option>
 <option value="B+">B+</option>
 <option value="B">B</option>
-<option  value="C">C</option>
+<option value="C">C</option>
 <option value="F">F</option>
 <option value="Ab">Ab</option>
 </select><br>
-<h8 style="color: rgb(136, 152, 243);">CN</h8>
+<h8 style="color: rgb(203, 246, 116);">CN</h8>
 <select id="cn" class="form-select">
 <option value="O">O</option>
 <option value="A+">A+</option>
@@ -68,7 +68,7 @@
 <option value="F">F</option>
 <option value="Ab">Ab</option>
 </select><br>
-<h8 style="color: rgb(133, 158, 71);">WT</h8>
+<h8 style="color: rgb(203, 246, 116);">WT</h8>
 <select id="wt" class="form-select">
 <option value="O">O</option>
 <option value="A+">A+</option>
@@ -79,7 +79,7 @@
 <option value="F">F</option>
 <option value="Ab">Ab</option>
 </select><br>
-<h8 style="color: rgb(83, 161, 88);">DATA ANALYTICS</h8>
+<h8 style="color: rgb(244, 176, 212);">DA</h8>
 <select id="da" class="form-select">
 <option value="O">O</option>
 <option value="A+">A+</option>
@@ -90,8 +90,8 @@
 <option value="F">F</option>
 <option value="Ab">Ab</option>
 </select><br>
-<h8 style="color: rgb(123, 95, 205);">CG</h8>
-<select id="aos" class="form-select">
+<h8 style="color: rgb(229, 51, 119);">CG</h8>
+<select id="cg" class="form-select">
 <option value="O">O</option>
 <option value="A+">A+</option>
 <option value="A">A</option>
@@ -101,7 +101,7 @@
 <option value="F">F</option>
 <option value="Ab">Ab</option>
 </select><br>
-<h8 style="color: rgb(229, 51, 119);">SE lab</h8>
+<h8 style="color: rgb(51, 229, 223);">SE lab</h8>
 <select id="selab" class="form-select">
 <option value="O">O</option>
 <option value="A+">A+</option>
@@ -112,7 +112,7 @@
 <option value="F">F</option>
 <option value="Ab">Ab</option>
 </select><br>
-<h8 style="color: rgb(232, 200, 131);">CN & wt LAB</h8>
+<h8 style="color: rgb(154, 200, 173);">CNWT lab</h8>
 <select id="cnwtlab" class="form-select">
 <option value="O">O</option>
 <option value="A+">A+</option>
@@ -123,7 +123,7 @@
 <option value="F">F</option>
 <option value="Ab">Ab</option>
 </select><br>
-<h8 style="color: rgb(98, 216, 157);">AECS lab</h8>
+<h8 style="color: rgb(229, 211, 51);">AECS lab</h8>
 <select id="aecs" class="form-select">
 <option value="O">O</option>
 <option value="A+">A+</option>
@@ -140,7 +140,7 @@
 <footer class="footer py-4 bg-light">
     <div class="container">
         <div class="row align-items-center"><div class="navbar navbar-fixed-bottom">
-            <div class="col-lg-4 text-lg-start">Created by &copy; Pranaykumar Rayanchu</div>
+            <div class="col-lg-4 text-lg-start">Created by &copy;  Pranaykumar Rayanchu</div>
             <div class="col-lg-4 my-3 my-lg-0">
                 <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/pranay_kumarrr/"><i class="fab fa-instagram"></i></a>
                 <a class="btn btn-dark btn-social mx-2" href="https://github.com/Rayanchupranaykumar"><i class="fab fa-github"></i></a>
